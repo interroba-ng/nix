@@ -1,0 +1,9 @@
+{
+ imports = [
+  ./hardware-configuration.nix
+  ../modules/packages.nix
+ ];
+
+ networking.hostName = "bixos";
+ system.stateVersion = "26.05";
+}

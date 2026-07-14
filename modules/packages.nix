@@ -9,6 +9,9 @@
   
  environment.systemPackages = with pkgs; [
   inputs.nix-gaming.packages.${pkgs.stdenv.hostPlatform.system}.star-citizen
+  rocmPackages.rocm-smi
+  olympus
+  fuse
   flatpak
   unzip
   vulkan-tools

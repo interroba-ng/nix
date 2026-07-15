@@ -9,7 +9,7 @@ in {
 #xdg.configFile."".source =     link "";
  xdg.configFile."hypr".source   = link "hypr";
  xdg.configFile."waybar".source = link "waybar";
-
+ xdg.configFile."fish".source   = link "fish";
 
  home.username      = "interrobang";
  home.homeDirectory = "/home/interrobang";

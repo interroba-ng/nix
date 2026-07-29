@@ -1,27 +1,26 @@
--- This is an example Hyprland Lua config file.
--- Refer to the wiki for more information.
--- https://wiki.hypr.land/Configuring/Start/
+-----------------
+---- IMPORTS ----
+-----------------
 
--- Please note not all available settings / options are set here.
--- For a full list, see the wiki
-
--- You can (and should!!) split this configuration into multiple files
--- Create your files separately and then require them like this:
--- require("myColors")
-
+-- require("")
 
 ------------------
 ---- MONITORS ----
 ------------------
 
--- See https://wiki.hypr.land/Configuring/Basics/Monitors/
 hl.monitor({
-    output   = "",
-    mode     = "preferred",
-    position = "auto",
-    scale    = "auto",
+  output = "HDMI-A-1",
+  mode = "1920x1080@100",
+  position = "0x0",
+  scale = 1,
 })
 
+hl.monitor({
+  output = "DP-2",
+  mode = "1920x1080@164.92",
+  position = "1920x0",
+  scale = 1,
+})
 
 ---------------------
 ---- MY PROGRAMS ----
@@ -44,6 +43,7 @@ local menu        = "fuzzel"
 --
 hl.on("hyprland.start", function () 
     hl.exec_cmd("waybar")
+    hl.exec_cmd("awww-daemon")
 end)
 
 

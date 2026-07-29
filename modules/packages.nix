@@ -9,7 +9,9 @@
   
  environment.systemPackages = with pkgs; [
   inputs.nix-gaming.packages.${pkgs.stdenv.hostPlatform.system}.star-citizen
+  awww
   micro
+  aseprite
   rocmPackages.rocm-smi
   olympus
   fuse

@@ -29,7 +29,7 @@ hl.monitor({
 -- Set programs that you use
 local terminal    = "kitty"
 local fileManager = "dolphin"
-local menu        = "fuzzel"
+local menu        = "fuzzel --config='/home/interrobang/nix/dots/fuzzel/fuzzel.ini'"
 
 
 -------------------
@@ -87,8 +87,8 @@ hl.config({
 	gaps_out    = 0,
         border_size = 2,
 
-        col = {
-            active_border   = "rgba(ff0000ee)",
+	col = {
+            active_border   = "rgba(ffffffee)",
             inactive_border = "rgba(595959aa)",
         },
 
@@ -106,6 +106,7 @@ hl.config({
         -- Change transparency of focused and unfocused windows
         active_opacity   = 1.0,
         inactive_opacity = 1.0,
+	rounding = 0;
 
         shadow = {
             enabled      = true,
@@ -163,12 +164,6 @@ hl.animation({ leaf = "zoomFactor",    enabled = true,  speed = 7,    bezier = "
 -- hl.window_rule({
 --     name  = "no-gaps-wtv1",
 --     match = { float = false, workspace = "w[tv1]" },
---     border_size = 0,
---     rounding    = 0,
--- })
--- hl.window_rule({
---     name  = "no-gaps-f1",
---     match = { float = false, workspace = "f[1]" },
 --     border_size = 0,
 --     rounding    = 0,
 -- })

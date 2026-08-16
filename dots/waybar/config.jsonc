@@ -5,6 +5,9 @@
     "modules-center": ["clock"],
     "modules-right": ["cpu", "memory"],
     
+    "hyprland/workspaces": {
+         "on-click": "activate"
+    },
     
     "clock": {
         "format": "{:%H:%M}"
